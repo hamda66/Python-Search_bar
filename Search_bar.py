@@ -22,3 +22,6 @@ would yet you your'''.split())
 class scoredIndexSearch(object):
     def __init__(self, prefix, *redis_settings):
         self.prefix = prefix.lower().rstrip(':') + ':'
+
+        #connection to redis server
+        self.connection = redis.Redis(*redis_settings)
