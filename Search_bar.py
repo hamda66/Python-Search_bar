@@ -26,4 +26,5 @@ class scoredIndexSearch(object):
         #connection to redis server
         self.connection = redis.Redis(*redis_settings)
  @staticmethod
- 
+
+  def made it:
