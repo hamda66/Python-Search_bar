@@ -27,4 +27,5 @@ class scoredIndexSearch(object):
         self.connection = redis.Redis(*redis_settings)
  @staticmethod
 
-  def made it:
+  def get_index_key(context, add=true):
+   
