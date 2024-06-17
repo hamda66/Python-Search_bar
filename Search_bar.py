@@ -25,7 +25,11 @@ class scoredIndexSearch(object):
 
         #connection to redis server
         self.connection = redis.Redis(*redis_settings)
- @staticmethod
-
-  def get_index_key(context, add=true):
+  
+    @staticmethod
+    def get_index_key(content, add=True):
+   # Very simple word-based parser.  We skip stop words and single
+        # character words.
+     words = NON_Word.sub('',content.lower()).split()
+     words =[words.strip("'") for words in words]
    
