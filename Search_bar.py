@@ -31,5 +31,7 @@ class scoredIndexSearch(object):
    # Very simple word-based parser.  We skip stop words and single
         # character words.
      words = NON_Word.sub('',content.lower()).split()
-     words =[words.strip("'") for words in words]
+     words =[words.strip("'") for word in words]
+     words = [word for word in words
+              ]
    
