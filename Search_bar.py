@@ -33,5 +33,5 @@ class scoredIndexSearch(object):
      words = NON_Word.sub('',content.lower()).split()
      words =[words.strip("'") for word in words]
      words = [word for word in words
-              ]
+            if word not in NON_Word and len(word) > 1  ]
    
