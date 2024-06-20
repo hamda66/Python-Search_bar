@@ -34,4 +34,11 @@ class scoredIndexSearch(object):
      words =[words.strip("'") for word in words]
      words = [word for word in words
             if word not in NON_Word and len(word) > 1  ]
+     
+       # Apply the Porter Stemmer here if you would like that functionality.
+
+        # Apply the Metaphone/Double Metaphone algorithm by itself, or after
+        # the Porter Stemmer.
+     if not add:
+       return words
    
