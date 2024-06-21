@@ -41,4 +41,6 @@ class scoredIndexSearch(object):
         # the Porter Stemmer.
      if not add:
        return words
+    # Calculate the TF portion of TF/IDF.
+     counts = collections.defaultdict(float)
    
