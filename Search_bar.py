@@ -43,4 +43,7 @@ class scoredIndexSearch(object):
        return words
     # Calculate the TF portion of TF/IDF.
      counts = collections.defaultdict(float)
+     for word in words:
+        
+
    
