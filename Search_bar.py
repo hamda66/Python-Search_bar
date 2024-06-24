@@ -45,5 +45,6 @@ class scoredIndexSearch(object):
      counts = collections.defaultdict(float)
      for word in words:
         counts[words] +=1
+     wordcount= len(words)
 
    
