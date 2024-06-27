@@ -48,5 +48,7 @@ class scoredIndexSearch(object):
      wordcount= len(words)
      tf = dict((word ,count / wordcount)
             for word, count in counts.iteritems()   )
+     
+     return tf
 
    
