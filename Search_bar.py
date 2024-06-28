@@ -50,5 +50,6 @@ class scoredIndexSearch(object):
             for word, count in counts.iteritems()   )
      
      return tf
+def _handle_content(self, id, content, add=True):
 
    
