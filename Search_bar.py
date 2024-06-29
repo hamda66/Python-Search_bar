@@ -51,5 +51,7 @@ class scoredIndexSearch(object):
      
      return tf
 def _handle_content(self, id, content, add=True):
+   # Get the keys we want to index.
+   Keyes = self.get_index_keys(content)
 
    
