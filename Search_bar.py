@@ -55,4 +55,7 @@ def _handle_content(self, id, content, add=True):
    Keyes = self.get_index_keys(content)
    prefix = self.prefix
 
+    # Use a non-transactional pipeline here to improve performance.
+    pipe = self.connection.pipeline(False)
+
    
