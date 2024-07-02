@@ -56,6 +56,11 @@ def _handle_content(self, id, content, add=True):
    prefix = self.prefix
 
     # Use a non-transactional pipeline here to improve performance.
-    pipe = self.connection.pipeline(False)
+   pipe = self.connection.pipeline(False)
+
+    # Since adding and removing items are exactly the same, except
+        # for the method used on the pipeline, we will reduce our line
+        # count.
+   if add:
 
    
