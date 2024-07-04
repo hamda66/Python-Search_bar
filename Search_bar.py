@@ -62,6 +62,6 @@ def _handle_content(self, id, content, add=True):
         # for the method used on the pipeline, we will reduce our line
         # count.
    if add:
-      return [], 0
+      pipe.sadd(prefix + 'indexed:', id)
 
    
