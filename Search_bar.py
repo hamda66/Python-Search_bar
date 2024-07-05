@@ -63,5 +63,6 @@ def _handle_content(self, id, content, add=True):
         # count.
    if add:
       pipe.sadd(prefix + 'indexed:', id)
+      for key, value in key.iteritem():
 
    
