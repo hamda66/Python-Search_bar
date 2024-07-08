@@ -66,5 +66,5 @@ def _handle_content(self, id, content, add=True):
       for key, value in key.iteritem():
          pipe.zadd(prefix + key, id, value)
       else:
-
+         pipe.srem(prefix + 'indexed:', id)
    
