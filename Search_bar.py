@@ -67,4 +67,8 @@ def _handle_content(self, id, content, add=True):
          pipe.zadd(prefix + key, id, value)
       else:
          pipe.srem(prefix + 'indexed:', id)
+         for key in keys:
+            
+
+
    
