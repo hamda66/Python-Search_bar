@@ -61,14 +61,14 @@ def _handle_content(self, id, content, add=True):
     # Since adding and removing items are exactly the same, except
         # for the method used on the pipeline, we will reduce our line
         # count.
-   if add:
+ #  if add:
       pipe.sadd(prefix + 'indexed:', id)
       for key, value in key.iteritem():
          pipe.zadd(prefix + key, id, value)
       else:
          pipe.srem(prefix + 'indexed:', id)
          for key in keys:
-            
 
 
-   
+
+#ENDING THIS PROJECT CUZ THIS GOT BORING. SORRY TO THE OP
